@@ -561,8 +561,8 @@ public class Ringservice {
     return RingserviceJNI.dataTransferInfo(id, DataTransferInfo.getCPtr(info), info);
   }
 
-  public static long dataTransferBytesProgress(long id, long total, long progress) {
-    return RingserviceJNI.dataTransferBytesProgress(id, total, progress);
+  public static long dataTransferBytesProgress(long id, SWIGTYPE_p_long_long total, SWIGTYPE_p_long_long progress) {
+    return RingserviceJNI.dataTransferBytesProgress(id, SWIGTYPE_p_long_long.getCPtr(total), SWIGTYPE_p_long_long.getCPtr(progress));
   }
 
   public static void publish(String accountID, boolean status, String note) {
