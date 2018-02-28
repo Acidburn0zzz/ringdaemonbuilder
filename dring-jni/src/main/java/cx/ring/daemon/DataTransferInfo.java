@@ -51,12 +51,12 @@ public class DataTransferInfo {
     return RingserviceJNI.DataTransferInfo_lastEvent_get(swigCPtr, this);
   }
 
-  public void setFlags(SWIGTYPE_p_std__bitsetT_32_t value) {
-    RingserviceJNI.DataTransferInfo_flags_set(swigCPtr, this, SWIGTYPE_p_std__bitsetT_32_t.getCPtr(value));
+  public void setFlags(long value) {
+    RingserviceJNI.DataTransferInfo_flags_set(swigCPtr, this, value);
   }
 
-  public SWIGTYPE_p_std__bitsetT_32_t getFlags() {
-    return new SWIGTYPE_p_std__bitsetT_32_t(RingserviceJNI.DataTransferInfo_flags_get(swigCPtr, this), true);
+  public long getFlags() {
+    return RingserviceJNI.DataTransferInfo_flags_get(swigCPtr, this);
   }
 
   public void setTotalSize(long value) {
