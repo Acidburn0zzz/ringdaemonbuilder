@@ -204,7 +204,8 @@ public class RingserviceJNI {
   public final static native long getCodecDetails(String jarg1, long jarg2);
   public final static native boolean setCodecDetails(String jarg1, long jarg2, long jarg3, StringMap jarg3_);
   public final static native long getActiveCodecList(String jarg1);
-  public final static native String exportOnRing(String jarg1, String jarg2);
+  public final static native boolean exportOnRing(String jarg1, String jarg2);
+  public final static native boolean exportToFile(String jarg1, String jarg2);
   public final static native long getKnownRingDevices(String jarg1);
   public final static native boolean revokeDevice(String jarg1, String jarg2, String jarg3);
   public final static native void setActiveCodecList(String jarg1, long jarg2, UintVect jarg2_);

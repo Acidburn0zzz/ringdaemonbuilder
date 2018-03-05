@@ -257,8 +257,12 @@ public class Ringservice {
     return new UintVect(RingserviceJNI.getActiveCodecList(accountID), true);
   }
 
-  public static String exportOnRing(String accountID, String password) {
+  public static boolean exportOnRing(String accountID, String password) {
     return RingserviceJNI.exportOnRing(accountID, password);
+  }
+
+  public static boolean exportToFile(String accountID, String destinationPath) {
+    return RingserviceJNI.exportToFile(accountID, destinationPath);
   }
 
   public static StringMap getKnownRingDevices(String accountID) {
